@@ -1,0 +1,11 @@
+Some observations of the app outputs:
+
+The route with tobs I setup to go from 2016-08-23 to 2017-08-23.  The output was only one temp per date.
+
+The route with the start and end dates came up with max temp of 87, min temp of 58 and an averge that I don't remember and isn't relavent at this time.  This was using the same dates as for the tobs route (2016-08-23 to 2017-08-23)
+
+However, the max temp when looking at the output of the tobs route is NOT 87.  It is 82.  The min temp of 57 does appear in the output of tobs route.  I would assume the average isn't correct as well.
+
+I believe the querey for calculating min/max/avg between 2 dates is over much more of the date than the querey for between a start date and an end date.  This query seems to find last set of values between the two dates.  The min/max/avg seems to take the first instance of the start date and the last instance of the end date.
+
+I don't know what to do about this, no idea why they would be so different.  Would need more time to research.
